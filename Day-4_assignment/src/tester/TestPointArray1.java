@@ -36,6 +36,9 @@ public class TestPointArray1 {
 
             choice = sc.nextInt();
 
+
+
+
             switch (choice) {
 
                 case 1:

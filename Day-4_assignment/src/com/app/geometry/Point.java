@@ -6,7 +6,8 @@ public class Point {
 
     public Point(int x, int y) {
         this.x = x;
-        this.y = y;
+
+        
     }
 
     public String getDetails() {
@@ -14,6 +15,7 @@ public class Point {
     }
 
     // distance between this point and another point
+
     public double calculateDistance(Point other) {
         int dx = this.x - other.x;
         int dy = this.y - other.y;
