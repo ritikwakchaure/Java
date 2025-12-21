@@ -35,9 +35,7 @@ public class Student extends Person {
     }
     //add new functionality
 
-    public void teach() {
-        System.out.println(getFirstName() + " expert in " + sme);
-    }
+
 }
 
 

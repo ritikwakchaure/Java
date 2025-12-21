@@ -16,7 +16,7 @@ public class EventOrganizer4 {
         boolean exit = false;
         int counter = 0;
         while (!exit) {
-            System.out.println("Options 1.Register Student 2.Resister Faculty 3.Dsiplay Details of all participants 4. Display specific participant details 100.Exit");
+            System.out.println("Options 1.Register Student 2.Resister Faculty 3.Dsiplay Details of all participants 4.Display specific participant details  5. Invoke subclass specific functionality 100.Exit");
             System.out.println("Choose Option");
             switch (sc.nextInt()) {
 
@@ -63,7 +63,19 @@ public class EventOrganizer4 {
                         System.out.println("Invalid Number");
                     }
                     break;
+                case 5:
+                    System.out.println("Enter the seat number");
+                    index = sc.nextInt() - 1;
+                    if (index >= 0 && index < counter) {
+                        Person p = participants[index];
+//                        p.study(); javac reslove of the  reference . there is no "study method define  in person class"
+                        // down casting : climbing  down inheritance hierarachy
 
+                        ((Student)p).study();
+                    } else {
+
+                        System.out.println("Invalid Number");
+                    }
                 case 100:
                     break;
 
