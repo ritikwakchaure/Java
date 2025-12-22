@@ -4,6 +4,7 @@ import com.app.core.Faculty;
 import com.app.core.Person;
 import com.app.core.Student;
 
+import javax.swing.text.html.parser.DTD;
 import java.util.Scanner;
 
 public class EventOrganizer4 {
@@ -68,10 +69,15 @@ public class EventOrganizer4 {
                     index = sc.nextInt() - 1;
                     if (index >= 0 && index < counter) {
                         Person p = participants[index];
-//                        p.study(); javac reslove of the  reference . there is no "study method define  in person class"
-                        // down casting : climbing  down inheritance hierarachy
+//                        p.study(); javac resolve of the  reference . there is no "study method define  in person class"
+                        //howhow down casting : climbing  down inheritance hierarchy
+//                        in order to avoid classcastexpecetion ,Must use itanceof before doing down casting
+                        if (p instanceof Student) {
+                            ((Student) p).study();
+                        } else {
 
-                        ((Student)p).study();
+                            ((Faculty) p).teach();
+                        }
                     } else {
 
                         System.out.println("Invalid Number");
@@ -79,6 +85,8 @@ public class EventOrganizer4 {
                 case 100:
                     break;
 
+                default:
+                    throw new IllegalStateException("Unexpected value: " + sc.nextInt());
             }
         }
 
