@@ -4,7 +4,6 @@ import com.app.core.Faculty;
 import com.app.core.Person;
 import com.app.core.Student;
 
-import javax.swing.text.html.parser.DTD;
 import java.util.Scanner;
 
 public class EventOrganizer4 {
