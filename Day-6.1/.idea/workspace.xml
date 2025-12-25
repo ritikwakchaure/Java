@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93e9094d-bd3a-4984-a366-340201db9a35" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/shapes/BoundedShape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shapes/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shapes/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tester/TestAbstraction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Day-5_assignment/src/com/app/fruits/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day-5_assignment/src/com/app/fruits/Fruit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Day-5_assignment/src/com/app/fruits/Orange.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day-5_assignment/src/com/app/fruits/Orange.java" afterDir="false" />
